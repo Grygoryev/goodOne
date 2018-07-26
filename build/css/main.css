@@ -62,7 +62,7 @@ a:link, a:visited, a:focus {
 
 .intro {
   min-height: 540px;
-  background: url("/img/intro-bg-mob-s.png");
+  background: url("../img/intro-bg-mob-s.png");
   background-position: 50% 50%;
   background-size: cover;
   padding-top: 20px;
