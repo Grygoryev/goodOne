@@ -1,0 +1,42 @@
+-
+  var participants = [
+    {
+      name: "Bradley Hunter",
+      photo: "",
+      icon: "img/users/user1-i.png",
+      description: "Based in Chicago. I love playing tennis and loud music.",
+      number: "1"
+    },
+    {
+      name: "Lucas Marsha",
+      photo: "",
+      icon: "img/users/user2-i.png",
+      description: "I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.",
+      number: "2"
+    },
+    {
+      name: "Heather Walker",
+      photo: "",
+      icon: "img/users/user3-i.png",
+      description: "I'm a happy person that loves cats and climbing on mountains.\n",
+      number: "3"
+    },
+    {
+      name: "Bradley Hunter",
+      photo: "",
+      icon: "img/users/user4-i.png",
+      description: "Based in Chicago. I love playing tennis and loud music.",
+      number: "4"
+    }
+  ]
+section.meet-partner.section
+  h2.section__title Meet a partner for your best holiday
+  .meet-partner__container.participants
+    for participant in participants
+      .participant
+        .participant__avatar&attributes({'class' : 'participant__avatar-' + participant.number})
+          img(src=participant.icon).participant__icon
+        .participant__title #{participant.name}
+        .participant__description #{participant.description}
+  .btn.btn--see-more See other partners
+

@@ -1,0 +1,56 @@
+.footer {
+  border-top: 4px solid $btnsColor;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &__logo {
+    text-align: center;
+    color: $btnsColor;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+
+    @include font(16px, 1, 700, $fontMontserrat);
+  }
+
+  &__section {
+    margin-bottom: 20px;
+  }
+
+  &__section-title {
+    color: $black;
+    margin-bottom: 16px;
+    text-align: center;
+
+    @include font(14px, 1, 700, $fontMontserrat);
+  }
+
+  &__links {
+    text-align: center;
+    color: #666666;
+  }
+
+  &__link {
+    @include font(14px, 1, 300, $fontRoboto);
+
+    display: inline-block;
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__designed-by-title {
+    @include font(10px, 1, 700, $fontMontserrat);
+
+    color: #cccccc;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__designed-by-logo {
+    display: block;
+    margin: 0 auto;
+  }
+}

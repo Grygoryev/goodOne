@@ -1,0 +1,42 @@
+.btn {
+  border-radius: 20px;
+  border: 3px solid $white;
+  color: $white;
+  text-align: center;
+}
+
+.btn--search-partner {
+  background-color: $btnsColor;
+  border-color: $btnsColor;
+  max-width: 280px;
+  width: 100%;
+
+  margin: 0 auto;
+
+  @include font(14px, 35px, 300, $fontMontserrat);
+}
+
+.btn--see-more {
+  max-width: 280px;
+  width: 100%;
+  background-color: $white;
+  color: $btnsColor;
+  border-color: $btnsColor;
+  border-width: 2px;
+  margin: 0 auto;
+
+  @include font(14px, 35px, 300, $fontMontserrat);
+}
+
+.enter-btn {
+  @include font(14px, 36px, 300, $fontMontserrat);
+
+  min-width: 90px;
+  text-align: center;
+  display: inline-block;
+
+  &--sign-up {
+    border: 3px solid $white;
+    border-radius: 20px;
+  }
+}

@@ -1,0 +1,27 @@
+-
+  var items = [
+    {
+      step: 1,
+      title: "Sed leo enim, condimentum",
+      description: "Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis."
+    },
+    {
+      step: 2,
+      title: "Sed leo enim, condimentum",
+      description: "Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis."
+    },
+    {
+      step: 3,
+      title: "Sed leo enim, condimentum",
+      description: "Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis."
+    }
+  ]
+section.how-it-works.section
+  h2.section__title How Dreamshare works?
+  .how-it-works__container
+    for item in items
+      .how-it-works__item&attributes({'class' : 'how-it-works__item-' + item.step})
+        .how-it-works__item-content
+          .how-it-works__step Step #{item.step}
+          .how-it-works__item-title #{item.title}
+          .how-it-works__item-description #{item.description}

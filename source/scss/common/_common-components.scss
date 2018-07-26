@@ -1,0 +1,10 @@
+.section {
+
+  &__title {
+    @include font(22px, 1, 700, $fontMontserrat);
+
+    max-width: 300px;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+}

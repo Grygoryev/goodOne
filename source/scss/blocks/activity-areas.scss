@@ -1,0 +1,47 @@
+.activity-areas {
+  margin-bottom: 40px;
+
+  &__item {
+    width: 100%;
+    max-width: 300px;
+    min-height: 120px;
+    margin: 0 auto 10px;
+
+    @include flex(center, center);
+
+    &_sports {
+      background: url("../img/activity-areas/1.png");
+    }
+
+    &_health {
+      background: url("../img/activity-areas/2.png");
+    }
+
+    &_sports-extreme {
+      background: url("../img/activity-areas/3.png");
+    }
+
+    &_games {
+      background: url("../img/activity-areas/4.png");
+    }
+
+    &_culture {
+      background: url("../img/activity-areas/5.png");
+    }
+
+    &_relaxation {
+      background: url("../img/activity-areas/6.png");
+    }
+
+    &_travel {
+      background: url("../img/activity-areas/7.png");
+    }
+  }
+
+  &__item-name {
+    @include font(22px, 1, 700, $fontMontserrat);
+
+    color: white;
+    text-align: center;
+  }
+}

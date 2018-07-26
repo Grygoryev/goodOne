@@ -1,0 +1,17 @@
+@mixin respond-to-min($resolution) {
+  @media (min-width: $resolution) {
+    @content
+  }
+}
+
+@mixin flex($jc: flex-start, $ai: flex-start, $wrap: wrap, $d: row) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-direction: $d;
+  flex-wrap: $wrap;
+}
+
+@mixin font($size: 16px, $lh: 1, $fw: normal, $font-family: $font-base) {
+  font: $fw #{$size}/#{$lh} $font-family;
+}

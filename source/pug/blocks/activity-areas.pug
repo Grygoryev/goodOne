@@ -1,0 +1,17 @@
+-
+  var activityAreas = [
+    { name: "Sports and Activity", mod: "sports" },
+    { name: "Wellness and Health", mod: "health" },
+    { name: "Extreme Sports and Expeditions", mod: "sports-extreme"  },
+    { name: "Games", mod: "games"  },
+    { name: "Culture and Education", mod: "culture"  },
+    { name: "Relaxation", mod: "relaxation"  },
+    { name: "Travelling", mod: "travel"  }
+  ]
+
+section.activity-areas.section
+  h2.section__title Discover holiday activity ideas
+  .activity-areas__container
+    for item in activityAreas
+      .activity-areas__item&attributes({'class' : 'activity-areas__item_' + item.mod})
+        .activity-areas__item-name #{item.name}

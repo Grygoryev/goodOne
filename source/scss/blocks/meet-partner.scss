@@ -1,0 +1,53 @@
+.meet-partner {
+  padding-bottom: 40px;
+
+}
+
+.participant {
+  max-width: 260px;
+  margin: 0 auto 30px;
+
+  &__title {
+    @include font(14px, 1, 700, $fontMontserrat);
+
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__avatar {
+    position: relative;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+
+    &-1 {
+      background: url("../img/users/user1.png");
+    }
+
+    &-2 {
+      background: url("../img/users/user2.png");
+    }
+
+    &-3 {
+      background: url("../img/users/user3.png");
+    }
+
+    &-4 {
+      background: url("../img/users/user4.png");
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+  }
+
+  &__description {
+    @include font(14px, 1, 300, $fontRoboto);
+
+    color: #666666;
+    text-align: center;
+  }
+}
