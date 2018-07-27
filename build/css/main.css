@@ -59,6 +59,10 @@ a:link, a:visited, a:focus {
   max-width: 300px;
   margin: 0 auto 20px;
   text-align: center; }
+  @media (min-width: 768px) {
+    .section__title {
+      max-width: 600px;
+      margin-bottom: 35px; } }
 
 .intro {
   min-height: 540px;
@@ -67,17 +71,36 @@ a:link, a:visited, a:focus {
   background-size: cover;
   padding-top: 20px;
   margin-bottom: 40px; }
+  @media (min-width: 768px) {
+    .intro {
+      background-image: url("../img/intro-bg-tablet.png");
+      min-height: 700px;
+      margin-bottom: 100px; } }
+  @media (min-width: 768px) {
+    .intro__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      margin-bottom: 160px; } }
   .intro__enter-btns {
     max-width: 190px;
-    margin: 0 auto;
-    color: white;
-    margin-bottom: 120px; }
+    margin: 0 auto 120px;
+    color: white; }
+    @media (min-width: 768px) {
+      .intro__enter-btns {
+        margin: 0 50px 0 0; } }
   .intro__logo {
     font: 700 20px/1 "Montserrat", sans-serif;
     text-transform: uppercase;
     color: white;
     text-align: center;
     margin-bottom: 35px; }
+    @media (min-width: 768px) {
+      .intro__logo {
+        margin-left: 50px; } }
   .intro__title {
     text-transform: uppercase;
     color: white;
@@ -86,12 +109,21 @@ a:link, a:visited, a:focus {
     width: 100%;
     margin: 0 auto 25px;
     font: 700 30px/1 "Montserrat", sans-serif; }
+    @media (min-width: 768px) {
+      .intro__title {
+        font-size: 50px;
+        max-width: 590px; } }
   .intro__sub-title {
     font: 300 18px/1 "Roboto", sans-serif;
     color: white;
     text-align: center;
     max-width: 220px;
     margin: 0 auto 20px; }
+    @media (min-width: 768px) {
+      .intro__sub-title {
+        font-size: 24px;
+        max-width: 590px;
+        margin-bottom: 40px; } }
 
 .how-it-works {
   margin-bottom: 43px; }
@@ -99,11 +131,16 @@ a:link, a:visited, a:focus {
     font: 700 22px/1 "Montserrat", sans-serif;
     text-align: center;
     margin-bottom: 20px; }
+  .how-it-works__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap; }
   .how-it-works__item {
     width: 100%;
     max-width: 300px;
     min-height: 240px;
-    height: 240px;
     margin: 0 auto 10px;
     padding: 20px;
     border-radius: 4px;
@@ -115,12 +152,25 @@ a:link, a:visited, a:focus {
     align-items: flex-start;
     flex-direction: column;
     flex-wrap: nowrap; }
+    @media (min-width: 768px) {
+      .how-it-works__item {
+        max-width: 236px;
+        min-height: 400px; } }
     .how-it-works__item-1 {
       background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url("../img/how-it-works/step1-mob.png"); }
+      @media (min-width: 768px) {
+        .how-it-works__item-1 {
+          background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url("../img/how-it-works/step1.png"); } }
     .how-it-works__item-2 {
       background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url("../img/how-it-works/step2-mob.png"); }
+      @media (min-width: 768px) {
+        .how-it-works__item-2 {
+          background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url("../img/how-it-works/step2.png"); } }
     .how-it-works__item-3 {
       background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url("../img/how-it-works/step3-mob.png"); }
+      @media (min-width: 768px) {
+        .how-it-works__item-3 {
+          background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url("../img/how-it-works/step3.png"); } }
   .how-it-works__step {
     font: 100 10px/20px "Myriad pro", sans-serif;
     letter-spacing: 2px;
@@ -140,10 +190,28 @@ a:link, a:visited, a:focus {
 
 .meet-partner {
   padding-bottom: 40px; }
+  @media (min-width: 768px) {
+    .meet-partner {
+      padding-bottom: 100px; } }
+  @media (min-width: 768px) {
+    .meet-partner__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+      flex-wrap: wrap;
+      max-width: 480px;
+      max-height: 620px;
+      width: 100%;
+      margin: 0 auto; } }
 
 .participant {
   max-width: 260px;
   margin: 0 auto 30px; }
+  @media (min-width: 768px) {
+    .participant {
+      max-width: 220px;
+      margin: 0 0 60px 0; } }
   .participant__title {
     font: 700 14px/1 "Montserrat", sans-serif;
     text-align: center;
@@ -173,6 +241,12 @@ a:link, a:visited, a:focus {
 
 .activity-areas {
   margin-bottom: 40px; }
+  .activity-areas__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap; }
   .activity-areas__item {
     width: 100%;
     max-width: 300px;
@@ -183,20 +257,47 @@ a:link, a:visited, a:focus {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap; }
+    @media (min-width: 768px) {
+      .activity-areas__item {
+        flex-basis: 238px;
+        min-height: 300px;
+        border-radius: 2px; } }
     .activity-areas__item_sports {
       background: url("../img/activity-areas/1.png"); }
+      @media (min-width: 768px) {
+        .activity-areas__item_sports {
+          background: url("../img/activity-areas/1-tablet.png"); } }
     .activity-areas__item_health {
       background: url("../img/activity-areas/2.png"); }
+      @media (min-width: 768px) {
+        .activity-areas__item_health {
+          background: url("../img/activity-areas/2-tablet.png"); } }
     .activity-areas__item_sports-extreme {
       background: url("../img/activity-areas/3.png"); }
+      @media (min-width: 768px) {
+        .activity-areas__item_sports-extreme {
+          background: url("../img/activity-areas/3-tablet.png"); } }
     .activity-areas__item_games {
       background: url("../img/activity-areas/4.png"); }
+      @media (min-width: 768px) {
+        .activity-areas__item_games {
+          background: url("../img/activity-areas/4-tablet.png"); } }
     .activity-areas__item_culture {
       background: url("../img/activity-areas/5.png"); }
+      @media (min-width: 768px) {
+        .activity-areas__item_culture {
+          background: url("../img/activity-areas/5-tablet.png");
+          flex-basis: 400px; } }
     .activity-areas__item_relaxation {
       background: url("../img/activity-areas/6.png"); }
+      @media (min-width: 768px) {
+        .activity-areas__item_relaxation {
+          background: url("../img/activity-areas/6-tablet.png"); } }
     .activity-areas__item_travel {
       background: url("../img/activity-areas/7.png"); }
+      @media (min-width: 768px) {
+        .activity-areas__item_travel {
+          background: url("../img/activity-areas/7-tablet.png"); } }
   .activity-areas__item-name {
     font: 700 22px/1 "Montserrat", sans-serif;
     color: white;
