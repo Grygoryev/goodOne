@@ -3,6 +3,12 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
+ &__container {
+   @include respond-to-min($desktop) {
+     @include flex(space-between);
+   }
+ }
+
   &__logo {
     text-align: center;
     color: $btnsColor;
@@ -14,6 +20,10 @@
 
   &__section {
     margin-bottom: 20px;
+
+    @include respond-to-min($desktop) {
+      margin: 0;
+    }
   }
 
   &__section-title {
@@ -27,6 +37,12 @@
   &__links {
     text-align: center;
     color: #666666;
+
+    @include respond-to-min($desktop) {
+      @include flex(space-between, flex-start, nowrap, column);
+
+      min-height: 80px;
+    }
   }
 
   &__link {

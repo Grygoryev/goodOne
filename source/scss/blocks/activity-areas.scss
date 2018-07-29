@@ -2,7 +2,13 @@
   margin-bottom: 40px;
 
   &__container {
-    @include flex();
+    @include flex(space-between);
+
+    @include respond-to-min($tablet) {
+      max-width: 940px;
+      width: 100%;
+      margin: 0 auto;
+    }
   }
 
   &__item {
@@ -14,16 +20,20 @@
     @include flex(center, center);
 
     @include respond-to-min($tablet) {
-      flex-basis: 238px;
       min-height: 300px;
-      border-radius: 2px;
+      border-radius: 3px;
+      max-width: 31%;
+      width: 100%;
+      margin-bottom: 20px;
+      background-position: 50% 50%;
     }
 
     &_sports {
       background: url("../img/activity-areas/1.png");
 
       @include respond-to-min($tablet) {
-        background: url("../img/activity-areas/1-tablet.png");
+        background-image: url("../img/activity-areas/1-tablet.png");
+
       }
     }
 
@@ -31,7 +41,7 @@
       background: url("../img/activity-areas/2.png");
 
       @include respond-to-min($tablet) {
-        background: url("../img/activity-areas/2-tablet.png");
+        background-image: url("../img/activity-areas/2-tablet.png");
       }
     }
 
@@ -39,7 +49,7 @@
       background: url("../img/activity-areas/3.png");
 
       @include respond-to-min($tablet) {
-        background: url("../img/activity-areas/3-tablet.png");
+        background-image: url("../img/activity-areas/3-tablet.png");
       }
     }
 
@@ -47,8 +57,7 @@
       background: url("../img/activity-areas/4.png");
 
       @include respond-to-min($tablet) {
-        background: url("../img/activity-areas/4-tablet.png");
-        //flex-grow: 1;
+        background-image: url("../img/activity-areas/4-tablet.png");
       }
     }
 
@@ -56,9 +65,8 @@
       background: url("../img/activity-areas/5.png");
 
       @include respond-to-min($tablet) {
-        background: url("../img/activity-areas/5-tablet.png");
-        //flex-grow: 2;
-        flex-basis: 400px;
+        background-image: url("../img/activity-areas/5-tablet.png");
+        max-width: 64%;
       }
     }
 
@@ -66,7 +74,8 @@
       background: url("../img/activity-areas/6.png");
 
       @include respond-to-min($tablet) {
-        background: url("../img/activity-areas/6-tablet.png");
+        background-image: url("../img/activity-areas/6-tablet.png");
+        max-width: 64%;
       }
     }
 
@@ -74,7 +83,7 @@
       background: url("../img/activity-areas/7.png");
 
       @include respond-to-min($tablet) {
-        background: url("../img/activity-areas/7-tablet.png");
+        background-image: url("../img/activity-areas/7-tablet.png");
       }
     }
   }

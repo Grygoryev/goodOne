@@ -8,6 +8,15 @@
     margin-bottom: 20px;
   }
 
+  &__input-container {
+    @include respond-to-min($desktop) {
+      @include flex(space-between);
+
+      max-width: 440px;
+      margin: 0 auto;
+    }
+  }
+
   &__interest-input {
     color: #cccccc;
     border: 1px solid #cccccc;
@@ -19,5 +28,10 @@
     display: block;
 
     @include font(14px, 35px, 300, $fontRoboto);
+
+    @include respond-to-min($desktop) {
+      margin: 0 0 10px 0;
+      max-width: 240px;
+    }
   }
 }
